@@ -1,0 +1,74 @@
+body{
+    font-family:sans-serif;
+    color: grey;
+}
+header , section{
+    text-align: center;
+}
+
+
+.imgList , .imgList2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.btn{
+    /* with flex */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+
+    display: table;
+    margin: auto;
+}
+.imgList div , .imgList2 div{
+    height: 300px;
+    width: calc((100%/3) - 50px);
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    /* margin: 20px; */
+    /* display: flex;
+    justify-content: space-around; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+}
+
+div > div:nth-child(1){
+    background-image: url(img/new-york.jpg);
+}
+div > div:nth-child(2){
+    background-image: url(img/san-francisco-2.jpg);
+}
+div > div:nth-child(3){
+    background-image: url(img/london.jpg);
+}
+
+.imgList2>div:nth-child(1){
+    background-image: url(img/napa.jpg);
+}
+.imgList2>div:nth-child(2){
+    background-image: url(img/san-francisco.jpg);
+}
+.imgList2>div:nth-child(3){
+    background-image: url(img/sonoma.jpg);
+}
+
+button{
+    margin: 10px;
+}
+
+
+@media (max-width: 650px) {
+   .imgList , .imgList2 {
+       display: flex;
+        flex-direction: column;
+    }
+
+    .imgList div , .imgList2 div{
+        width: 100%;
+    }
+}
