@@ -1,0 +1,25 @@
+/* this is how we select child from descendant selectors */
+article h2{
+    color: salmon;
+}
+
+/* this is say any h2 that is in a div in a article tag */
+article div h2 {
+    color: green
+}
+
+/* to access a direct child  you use the > */
+
+div > div h2 {
+    color: blue;
+}
+/* the plus symbol or the shift tac (+,~) allows you to select adjacent siblings  */
+/* this is saying anything li tag that has a li tag next to it  */
+ul> li + li{
+    color: sandybrown;
+}
+
+/* this will affect the h3 element and make it red */
+div > h2+h3{
+    color: red;
+}

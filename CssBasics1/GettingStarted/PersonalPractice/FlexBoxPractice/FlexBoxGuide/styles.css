@@ -1,0 +1,35 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+
+}
+.p1, .p2, .p3, .p4{
+    border: 1px solid black;
+}
+
+.p1, .p3{
+height: 100px;
+width: 100px;
+}
+.p2{
+    height: 100px;
+    width: 300px;
+    order: 2;
+    background-color: antiquewhite;
+}
+.p1{
+    background-color: olive;
+    order: 5;
+}
+.p3{
+ background-color: grey;
+ order: 0;   
+}
+.p4{
+    height: 100px;
+    width: 9000px; 
+    order: 10;
+    background-color: indianred;
+}

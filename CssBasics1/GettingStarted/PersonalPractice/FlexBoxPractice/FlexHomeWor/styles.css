@@ -1,0 +1,22 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+
+}
+p{
+    margin: 0;
+}
+
+.wrapper2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    border: 1px solid black;
+    height: 300px;
+
+
+}

@@ -1,0 +1,47 @@
+p{
+    background-color: aquamarine;
+}
+#food{
+    background-color: brown;
+}
+
+.hot-dog {
+    background-color: green;
+}
+.hot-dog p.hotdog{
+    background-color: red;
+}
+/* this selector is more specific then just the id thats why its overriding the salmon color, because the this element is nested we can reach nested elements with a space*/
+.hot-dog p#mustard{
+    background-color: burlywood;
+}
+
+#mustard{
+    background-color: salmon;
+}
+
+/* button and multclass styling  */
+
+.btn{
+    font-size: 16px;
+}
+.btn-danger{
+    background: red;
+}
+.btn-success{
+    background: green;
+}
+
+
+/* how to access both element to access two elements just used a comma */
+.hot-cat p, .hot-cat {
+    background-color: silver;
+}
+
+.hot-cat p.catdog{
+    background-color: slateblue;
+}
+/* //this is more specific then the previous css selector because we are locating not only the tag and class but also the p and id  */
+.hot-cat p#salmon, #salmon{
+    background-color: salmon;
+}

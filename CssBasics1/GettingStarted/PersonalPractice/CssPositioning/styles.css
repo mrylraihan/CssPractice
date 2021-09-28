@@ -1,0 +1,80 @@
+/* relative positioning allows you to move the item anywhere you want according to its original positioning (left,right, top, bottom) */
+
+/* when positioning elements the parent takes presidents then everything else is relative to the parent so if you use absolute in your child its only absolute relative to the parent  */
+.box{
+/* display: flex; then once you do this you can margin auto in your element and it will center on the page */
+position:relative ;
+flex-direction: column;
+border: 5px solid black;
+width: 500px;
+height: 500px;
+background-color: grey;
+margin: auto;
+
+
+}
+
+.item1, .item2, .item3, .item4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    /* margin: auto; */
+    
+}
+
+.item1{
+    background-color: lightgray;
+}
+.item2{
+    background-color: lightskyblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.item3{
+    background-color: lightyellow;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.item3item1{
+width: 100px;
+height: 100px;
+border: 2px solid black;
+background-color: yellow;
+margin: auto;
+justify-content: center;
+}
+
+.item4{
+position: absolute;
+display: flex;
+top: 0;
+right: 0;
+}
+.item5{
+width: 90px;
+height: 90px;
+border: 2px solid black;
+background-color: maroon;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+.item4item1{
+width: 90px;
+height: 90px;
+border: 2px solid black;
+background-color: navy;
+margin: auto;
+}
+
+.item6{
+display: flex;
+border: 2px solid black;
+width: 90px;
+height: 90px;
+position: absolute;
+bottom: 0;
+top: 0;
+}
