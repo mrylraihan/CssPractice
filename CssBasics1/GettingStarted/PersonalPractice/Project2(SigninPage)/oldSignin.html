@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+     <section id="before-sign-in">
+
+        <div class="">
+          <!-- Sign up form goes here! -->
+          <form id="sign-up" class="border">
+            <!-- to group multiple inputs together in our form -->
+            <fieldset>
+              <legend>Sign Up</legend>
+              <label for="em">Email:</label>
+              <input type="email" name="credentials[email]" id="em" placeholder="Enter Email" required>
+              <label for="ps">Password:</label>
+              <input type="password" name="credentials[password]" id="ps" placeholder="Enter Password" required>
+              <label for="psc">Password Confirmation:</label>
+              <input type="password" name="credentials[password_confirmation]" id="psc" placeholder="Enter Password Confirmation" required>
+              <button class="btn btn-success">Sign-Up</button>
+            </fieldset>
+          </form>
+          
+          <!-- Sign In -->
+          
+          <form id="sign-in" class="border">
+            <fieldset>
+              <legend>Sign In</legend>
+              <label for="email">Email:</label>
+              <input type="email" name="credentials[email]" id="email" placeholder="Enter Email" required>
+              <label for="password">Password:</label>
+              <input type="password" name="credentials[password]" id="password" placeholder="Enter Password" required>
+              <button class="btn btn-primary">Sign-In</button>
+            </fieldset>
+          </form>
+        </div>
+        </section>
+</body>
+</html>
